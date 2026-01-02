@@ -1,0 +1,21 @@
+# --- Eclipse IDE 설정 파일 (협업 시 충돌 원인) ---
+.classpath
+.project
+.settings/
+.factorypath
+.jsdtscope
+
+# --- 빌드 결과물 (컴파일된 파일들) ---
+# Eclipse가 만드는 출력 폴더
+bin/
+# Maven이 만드는 출력 폴더
+target/
+
+# --- 민감한 정보 (선택 사항) ---
+# DB 접속 정보가 들어있다면 제외하는 것이 좋습니다.
+# 필요하다면 DBInfo.properties.template 파일만 올리는 방식을 추천합니다.
+**/DBInfo.properties
+
+# --- OS 시스템 파일 ---
+Thumbs.db
+.DS_Store
