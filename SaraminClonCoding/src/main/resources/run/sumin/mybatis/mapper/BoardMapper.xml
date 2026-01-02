@@ -1,3 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="run.sumin.mybatis.mapper.BoardMapper"></mapper>
+<mapper namespace="run.sumin.board.mapper.BoardMapper">
+
+	<insert id="insertBoard" parameterType="run.sumin.dto.BoardDTO">
+		<selectKey keyProperty="jobId" resultType="int"
+			order="BEFORE">
+			SELECT SEQ_BOARD_JOB_ID.NEXTVAL FROM DUAL
+		</selectKey>
+
+		INSERT INTO BOARD (
+		JOB_ID,
+		COMP_ID,
+		JOB_TITLE,
+		SALARY_MIN,
+		SALARY_MAX,
+		SALARY_TXT,
+		CAREER_TEXT,
+		EDUCATION_TEXT,
+		WORK_TYPE_TEXT,
+		LOCATION_TEXT,
+		CONTENT_HTML,
+		DEADLINE_DATE,
+		REG_DATE
+		) VALUES (
+		#{jobId}, #{compId}, #{jobTitle},
+		#{salaryMin},
+		#{salaryMax},
+		#{salaryTxt},
+		#{careerText},
+		#{educationText},
+		#{workTypeText},
+		#{locationText},
+		#{contentHtml},
+		#{deadlineDate},
+		SYSDATE )
+	</insert>
+
+	<select id="selectBoardDetail" parameterType="int"
+		resultType="run.sumin.dto.BoardDTO">
+		SELECT
+		B.JOB_ID,
+		B.COMP_ID,
+		C.COMP_NAME, B.JOB_TITLE,
+		B.SALARY_MIN,
+		B.SALARY_MAX,
+		B.SALARY_TXT,
+		B.CAREER_TEXT,
+		B.EDUCATION_TEXT,
+		B.WORK_TYPE_TEXT,
+		B.LOCATION_TEXT,
+		B.CONTENT_HTML,
+		B.DEADLINE_DATE,
+		B.VIEW_COUNT,
+		B.REG_DATE
+		FROM BOARD B
+		JOIN COMPANY C ON B.COMP_ID = C.COMP_ID
+		WHERE B.JOB_ID = #{jobId}
+	</select>
+</mapper>
