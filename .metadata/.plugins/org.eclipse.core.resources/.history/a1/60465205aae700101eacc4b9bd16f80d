@@ -1,8 +1,0 @@
-package run.sumin.board.controller;
-
-import org.springframework.context.annotation.Conditional;
-
-@Conditional
-public class BoardController {
-
-}

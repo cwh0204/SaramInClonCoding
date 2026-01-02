@@ -1,9 +1,0 @@
-INDEX VERSION 1.4+D:\git\SaramInClonCoding\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-947995019.index
-2986897605.index
-3723004361.index
-2300345554.index
-631152097.index
-216975200.index
-2261206033.index
-3496347278.index
