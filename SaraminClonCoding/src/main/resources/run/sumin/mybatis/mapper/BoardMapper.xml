@@ -60,14 +60,16 @@
 	
 	<select id="selectBoardList" resultType="run.sumin.dto.BoardDTO">
 		SELECT 
-			JOB_ID, 
-			COMP_ID, 
-			JOB_TITLE, 
-			LOCATION_TEXT, 
-			DEADLINE_DATE, 
-			VIEW_COUNT, 
-			REG_DATE 
-		FROM BOARD
+			B.JOB_ID,
+			B.COMP_ID,
+            A.COMP_NAME,
+			B.JOB_TITLE, 
+			B.LOCATION_TEXT, 
+			B.DEADLINE_DATE, 
+			B.VIEW_COUNT, 
+			B.REG_DATE
+		FROM BOARD B
+        INNER JOIN COMPANIES A ON B.COMP_ID = A.COMP_ID
 		ORDER BY REG_DATE DESC
 	</select>
 </mapper>
