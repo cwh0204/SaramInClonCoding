@@ -1,0 +1,14 @@
+package run.sumin.board.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BoardController {
+	
+	@GetMapping
+	public String formUI(){
+		// 비밀번호 변경 form UI 제공
+		return "index";
+	}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.or.ddit.prod.mapper.ProdMapper">
+
+	<select id="selectProdList" resultType="ProdDTO">
+		SELECT
+		    PROD_ID,
+		    PROD_NAME,
+		    LPROD_GU,
+		    BUYER_ID,
+		    PROD_COST,
+		    PROD_PRICE,
+		    PROD_SALE,
+		    PROD_OUTLINE,
+		    PROD_DETAIL,
+		    PROD_IMG,
+		    PROD_TOTALSTOCK,
+		    PROD_INSDATE,
+		    PROD_PROPERSTOCK,
+		    PROD_SIZE,
+		    PROD_COLOR,
+		    PROD_DELIVERY,
+		    PROD_UNIT,
+		    PROD_QTYIN,
+		    PROD_QTYSALE,
+		    PROD_MILEAGE
+		FROM
+		    PROD
+	</select>
+</mapper>

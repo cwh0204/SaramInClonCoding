@@ -1,0 +1,13 @@
+package run.sumin.board.controller;
+
+import org.springframework.context.annotation.Conditional;
+
+@Conditional
+public class BoardController {
+	
+	@GetMapping
+	public String formUI(){
+		// 비밀번호 변경 form UI 제공
+		return "member/passwordForm";
+	}
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Servers&apos;" deleteContents="false" description="Delete resource &apos;Servers&apos;" element1="/Servers" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1767336251809"/>&#x0A;<refactoring comment="Delete resource &apos;SaraminClonCoding/src/main/webapp/resources/css/03&apos;" deleteContents="false" description="Delete resource &apos;SaraminClonCoding/src/main/webapp/resources/css/03&apos;" element1="/SaraminClonCoding/src/main/webapp/resources/css/03" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1767340050008"/>
+</session>
