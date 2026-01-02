@@ -19,3 +19,4 @@ target/
 # --- OS 시스템 파일 ---
 Thumbs.db
 .DS_Store
+/.metadata/

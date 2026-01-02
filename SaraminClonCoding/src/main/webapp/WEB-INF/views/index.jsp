@@ -8,5 +8,6 @@
 </head>
 <body>
 <h1>시작 페이지</h1>
+${list }
 </body>
 </html>

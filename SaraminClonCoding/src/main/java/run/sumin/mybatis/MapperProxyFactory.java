@@ -7,7 +7,12 @@ import java.util.Arrays;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+import run.sumin.board.mapper.BoardMapper;
+
+@Configuration
 public class MapperProxyFactory {
 	private static SqlSessionFactory factory = CustomSqlSessionFactoryBuilder.getSqlsessionfactory();
 	public static <T> T generateProxy(Class<T> mapperType) {
@@ -34,6 +39,12 @@ public class MapperProxyFactory {
 		// 프록시를 통해 어떤 메소드가 호출되면 해당 호출건에 대한 제어를 InvocationHandler 가 맡는다.
 		return (T) Proxy.newProxyInstance(mapperType.getClassLoader(), new Class<?>[] {mapperType}, invocationHandler);
 	}
+	
+	@Bean
+	public BoardMapper boardMapper() {
+        // 직접 만드신 팩토리를 사용해 프록시 객체를 생성하고 스프링 빈으로 등록합니다.
+        return MapperProxyFactory.generateProxy(BoardMapper.class);
+    }
 }
 
 

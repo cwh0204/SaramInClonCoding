@@ -57,4 +57,17 @@
 		JOIN COMPANY C ON B.COMP_ID = C.COMP_ID
 		WHERE B.JOB_ID = #{jobId}
 	</select>
+	
+	<select id="selectBoardList" resultType="run.sumin.dto.BoardDTO">
+		SELECT 
+			JOB_ID, 
+			COMP_ID, 
+			JOB_TITLE, 
+			LOCATION_TEXT, 
+			DEADLINE_DATE, 
+			VIEW_COUNT, 
+			REG_DATE 
+		FROM BOARD
+		ORDER BY REG_DATE DESC
+	</select>
 </mapper>

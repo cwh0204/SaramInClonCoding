@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
 <configuration>
-<properties resource="kr/or/ddit/db/DBInfo.properties" />
+<properties resource="run/sumin/db/DBInfo.properties" />
 <settings>
 	<setting name="mapUnderscoreToCamelCase" value="true"/>
 	<setting name="jdbcTypeForNull" value="VARCHAR"/>
@@ -24,8 +24,7 @@
 	</environment>
 </environments>
 <mappers>
-	<mapper resource="kr/or/ddit/mybatis/mapper/MemberMapper.xml"/>
-	<mapper resource="kr/or/ddit/mybatis/mapper/ProdMapper.xml"/>
+	<mapper resource="run/sumin/mybatis/mapper/BoardMapper.xml"/>
 </mappers>
 </configuration>
 
