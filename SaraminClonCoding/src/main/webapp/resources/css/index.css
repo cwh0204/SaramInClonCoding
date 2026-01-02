@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul, li {
+	list-style: none;
+}
+
+.box_item {
+	display: flex;
+	padding: 24px 28px;
+	box-sizing: border-box;
+}
+
+.f12 {
+	font-size: 12px
+}
+
+.f16 {
+	font-size: 16px
+}
+
+.p0 {
+	padding: 0;
+}
+
+.company {
+	line-height: 20px;
+	height: 80px;
+	width: 166px;
+}
+
+.s_company {
+	display: block;
+	margin-top: 2px;
+	color: #67738e;
+	line-height: 20px;
+}
+
+.main_text {
+	margin-left: 64px;
+	width: 556px;
+}
+
+.job_tit {
+	display: flex;
+	width: 100%;
+	font-weight: bold;
+	vertical-align: top;
+	align-items: center;
+}
+
+.job_meta {
+	margin-top: 12px;
+	max-width: 556px;
+	font-size: 13px;
+}
+
+.job_badge {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.work_place {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding-left: 24px;
+	color: #475067;
+	font-size: 13px;
+	line-height: 20px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.sri_btn_md {
+	overflow: hidden;
+	margin: 0;
+	width: 106px;
+	height: 32px;
+	border: 0;
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.sri_btn_immediately {
+	position: relative;
+	border: 1px solid var(--coral110);
+	color: #d63131;
+	font-size: 14px !important;
+}
+
+.colrecruit_info {
+	margin-left: 56px;
+	width: 232px;
+}
+
+.date {
+	display: block;
+	color: #67738e;
+	text-align: right;
+}
+
+.deadlines {
+	display: block;
+	color: #67738e;
+	text-align: right;
+}
