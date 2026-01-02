@@ -36,7 +36,7 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-		<!-- 서블릿 6.0 -->
+<!--		 서블릿 6.0 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -58,14 +58,14 @@
 			<version>6.0.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- JSP 3.1 -->
+<!--		 JSP 3.1 -->
 		<dependency>
 			<groupId>jakarta.servlet.jsp</groupId>
 			<artifactId>jakarta.servlet.jsp-api</artifactId>
 			<version>3.1.1</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- JSTL 3.0 -->
+<!--		 JSTL 3.0 -->
 		<dependency>
 			<groupId>jakarta.servlet.jsp.jstl</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
@@ -76,7 +76,7 @@
 			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
 			<version>3.0.1</version>
 		</dependency>
-		<!--Domain 대상 bean validation-->
+<!--		Domain 대상 bean validation-->
 		<dependency>
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
@@ -87,48 +87,48 @@
 			<artifactId>expressly</artifactId>
 			<version>6.0.0</version>
 		</dependency>
-		<!-- MPA 공통 레이아웃 적용 지원-->
+<!--		 MPA 공통 레이아웃 적용 지원-->
 		<dependency>
 			<groupId>org.sitemesh</groupId>
 			<artifactId>sitemesh</artifactId>
 			<version>3.2.1</version>
 		</dependency>
-		<!--데이터베이스 연결 지원-->
+<!--		데이터베이스 연결 지원-->
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc17</artifactId>
 			<version>23.26.0.0.0</version>
 		</dependency>
-		<!--IOC(Inversion Of Control, 제어의 역전) / DI(Dependency Injection, 의존성 주입) 패턴이 적용된 경우, framework 라 지칭함-->
-		<!--sql mapper, data mapper, mersistence framework, ORM 지원-->
+<!--		IOC(Inversion Of Control, 제어의 역전) / DI(Dependency Injection, 의존성 주입) 패턴이 적용된 경우, framework 라 지칭함
+		sql mapper, data mapper, mersistence framework, ORM 지원-->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.5.19</version>
 		</dependency>
 
-		<!--웹크롤링이나 웹스래핑시에 DOM 파싱에 사용됨-->
+<!--		웹크롤링이나 웹스래핑시에 DOM 파싱에 사용됨-->
 		<dependency>
 			<groupId>org.jsoup</groupId>
 			<artifactId>jsoup</artifactId>
 			<version>1.21.2</version>
 		</dependency>
 
-		<!--JSON 변환(직렬화-marshalling/역직렬화-unmarshalling)-->
+<!--		JSON 변환(직렬화-marshalling/역직렬화-unmarshalling)-->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>2.13.2</version>
 		</dependency>
 
-		<!--JavaBean 규약에 따라 Domain Layer 를 개발하기 위해 사용-->
+<!--		JavaBean 규약에 따라 Domain Layer 를 개발하기 위해 사용-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.42</version>
 		</dependency>
 
-		<!--Reflection 지원 라이브러리(주로, parameter map 을  DTO 로 변환할때 활용함, ex. PopulationUtils)-->
+<!--		Reflection 지원 라이브러리(주로, parameter map 을  DTO 로 변환할때 활용함, ex. PopulationUtils)-->
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
@@ -141,29 +141,29 @@
 			</exclusions>
 		</dependency>
 
-		<!--java.lang 패키지의 기본 api 를 확장해 사용할 수 있음.-->
-		<!--StringUtils, WordUtils, ClassUtils, Failable..-->
+<!--		java.lang 패키지의 기본 api 를 확장해 사용할 수 있음.
+		StringUtils, WordUtils, ClassUtils, Failable..-->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.20.0</version>
 		</dependency>
 
-		<!--stream copy 와 같은 IO 작업에 활용됨.-->
+<!--		stream copy 와 같은 IO 작업에 활용됨.-->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.21.0</version>
 		</dependency>
 
-		<!--mock 데이터 생성 지원-->
+<!--		mock 데이터 생성 지원-->
 		<dependency>
 			<groupId>net.datafaker</groupId>
 			<artifactId>datafaker</artifactId>
 			<version>2.5.3</version>
 		</dependency>
 
-		<!--단위 테스트 프레임워크-->
+<!--		단위 테스트 프레임워크-->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
@@ -177,7 +177,7 @@
 			<version>1.16</version>
 		</dependency>
 
-		<!--로깅 지원-->
+<!--		로깅 지원-->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-slf4j2-impl</artifactId>
@@ -189,7 +189,7 @@
 			<version>2.0.17</version>
 		</dependency>
 
-		<!--암호화 지원-->
+<!--		암호화 지원-->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-crypto</artifactId>
