@@ -1,6 +1,6 @@
 package run.sumin.dto;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import lombok.Data;
 
@@ -10,5 +10,5 @@ public class UsersDTO {
 	private String userEmail;
 	private String userPass;
 	private String userName;
-	private LocalDate regDate;
+	private LocalDateTime regDate;
 }
